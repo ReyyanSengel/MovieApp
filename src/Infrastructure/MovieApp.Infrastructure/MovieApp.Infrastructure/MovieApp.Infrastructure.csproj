@@ -6,4 +6,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0-preview.5.23280.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Core\MovieApp.Application\MovieApp.Application\MovieApp.Application.csproj" />
+    <ProjectReference Include="..\..\MovieApp.Persistence\MovieApp.Persistence\MovieApp.Persistence.csproj" />
+  </ItemGroup>
+
 </Project>

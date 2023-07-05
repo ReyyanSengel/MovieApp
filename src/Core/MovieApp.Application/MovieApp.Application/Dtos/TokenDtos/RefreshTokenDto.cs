@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MovieApp.Domain.Entities.Common
+namespace MovieApp.Application.Dtos.TokenDtos
 {
-    public abstract class BaseEntity
+    public class RefreshTokenDto
     {
-        public int Id { get; set; }
+        public string RefreshToken { get; set; }
     }
 }
+
